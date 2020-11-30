@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(226, 23%, 92%);
+--Grayish-Blue: rgb(74,190,189);
+--Bold: 700;
+--Regular:400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    
+    
+}
+body{
+    background-color: var(--Light-Gray);
+}
+.section{
+    margin: 20% ;
+    border-radius: 0.5em;
+    width: 55%;
+}
+.main{
+    padding: 2em; 
+    background-color: #fff;
+    border-radius: 0.5em;
+}
+h1{
+   color: var(--Cyan);
+    padding-bottom: 1.5em;
+   font-weight:var(--Bold); 
+    
+}
+.subtitle{
+    color: var(--Bright-Yellow);
+    padding-bottom: 1em;
+    
+}
+.description{
+     color: var(--Light-Gray);
+    
+  
+}
+.wrapper{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    
+}
+.left{
+    background-color:  var(--Cyan);
+    padding: 2em;
+    border-bottom-left-radius: 0.5em;
+    
+}
+.subtext{
+    color: #fff;
+    padding-bottom: 1em;
+}
+.price{
+    color: #fff;
+    font-weight:var(--Bold); 
+    font-size:1.5em
+}
+span{
+    color: var(--Light-Gray);
+    font-size:0.5em;
+    font-weight:var(--Light);
+    
+}
+.subprice{
+    color: var(--Light-Gray);
+    padding-bottom: 2em;
+    font-weight:var(--Light);
+    
+}
+button{
+    padding: 1em 6em;
+    color: #fff;
+    background-color:var(--Bright-Yellow );
+    border-radius: 0.5em;
+    
+}
+.right{
+    background-color:  var(--Grayish-Blue);
+    padding: 2em;
+    border-bottom-right-radius: 0.5em;
+}
+.tutorials p{
+    color: var(--Light-Gray);
+    font-size:0.85em;
+    padding-bottom: 0.3em;
+}
+@media (max-width: 375px) {
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    width: 75%;
+    border-radius: none;
+}    
+    button{
+    width: 100%;
+    padding: 1em;
+}
+.right{
+    border-bottom-right-radius: 0em;
+}
+.left{
+    border-bottom-left-radius: 0em;
+    
+}
+  
+}
+
